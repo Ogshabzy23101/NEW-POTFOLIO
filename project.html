@@ -1,85 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <title>Document</title>
-</head>
- <body>
-    <nav class="nav">
-      <div class="nav-center">
-        <img class="logo" src="./images/ailogo_2023-11-28-111207.png" alt="" />
-        <div class="nav-link">
-          <ul class="links">
-            <li class="link" style="--i: 1">
-              <a href="./index.html">home</a>
-            </li>
-            <li class="link" style="--i: 2">
-              <a href="./about.html">about</a>
-            </li>
-            <li class="link" style="--i: 3"><a href="./project.html">project</a></li>
-            <li class="link" style="--i: 4"><a href="./skill.html">skills</a></li>
-            <li class="link" style="--i: 5"><a href="./contact.html">contact</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/5dc8991644.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="project">
+      <nav class="nav">
+        <div class="nav-center">
+          <img
+            class="logo"
+            src="./images/ailogo_2023-11-28-111207.png"
+            alt=""
+          />
+          <div class="nav-link">
+            <ul class="links">
+              <li class="link" style="--i: 1">
+                <a href="./index.html">home</a>
+              </li>
+              <li class="link" style="--i: 2">
+                <a href="./about.html">about</a>
+              </li>
+              <li class="link" style="--i: 3">
+                <a href="./project.html">project</a>
+              </li>
+              <li class="link" style="--i: 4">
+                <a href="./skill.html">skills</a>
+              </li>
+              <li class="link" style="--i: 5">
+                <a href="./contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <aside class="aside-nav">
-      <!-- small circle -->
-      <div class="small-circle">
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle"></i>
-      </div>
-      <!-- profile -->
-      <div class="profile">
-        <div class="profile-tittle">
-          <img src="./images/sel3.jpg" alt="developer image" />
-          <h3>damilola ogundiran</h3>
+        <i class="fa-solid fa-bars navbtn"></i>
+      </nav>
+      <aside class="aside-nav">
+        <!-- small circle -->
+        <div class="small-circle">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
         </div>
-        <i class="fa-solid fa-square-caret-left"></i>
+        <!-- profile -->
+        <div class="profile">
+          <div class="profile-tittle">
+            <img src="./images/sel3.jpg" alt="developer image" />
+            <h3>damilola ogundiran</h3>
+          </div>
+          <i class="fa-solid fa-square-caret-left closebtn"></i>
+        </div>
+        <!-- search -->
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- menu -->
+        <div class="menu">
+          <h3>menu</h3>
+        </div>
+        <!-- aside links -->
+        <div class="aside-links">
+          <li class="aside-link">
+            <i class="fa-solid fa-house-user"></i
+            ><a href="./index.html">home</a>
+          </li>
+          <li class="aside-link">
+            <i class="fa-solid fa-address-card"></i
+            ><a href="./about.html">about</a>
+          </li>
+          <li class="aside-link">
+            <i class="fa-solid fa-briefcase"></i
+            ><a href="./project.html">project</a>
+          </li>
+          <li class="aside-link">
+            <i class="fa-solid fa-star"></i><a href="./skill.html">skills</a>
+          </li>
+          <li class="aside-link">
+            <i class="fa-solid fa-address-book"></i
+            ><a href="./contact.html">contact</a>
+          </li>
+        </div>
+        <!-- social icons -->
+        <div class="social-icons">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </aside>
+      <div class="project-heading">
+        <h1>my portfolio</h1>
       </div>
-      <!-- search -->
-      <div class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="project-container">
+        <!-- start of each book -->
+        <div class="each-card">
+          <div class="open-page">
+            <div class="openpage-container">
+              <div class="openpage-front">
+                <article class="front-text">
+                  <h1>css project</h1>
+                  <p>Author: Damilola Ogundiran</p>
+                </article>
+              </div>
+              <div class="openpage-back"></div>
+            </div>
+          </div>
+          <div class="inner-page">
+            <div class="innerpage-container">
+              <p>
+                this book is carefully crafted to showcase the power and
+                versatility of my Cascading Style Sheets (CSS) skill in modern
+                web design. From stunning layout designs to captivating
+                animations and interactive user interfaces
+              </p>
+              <a href="./bookpage.html"
+                ><button class="btn">click to open</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end of each book -->
+        <!-- start of each book -->
+        <div class="each-card">
+          <div class="open-page">
+            <div class="openpage-container">
+              <div class="openpage-front">
+                <article class="front-text">
+                  <h1>css project</h1>
+                  <p>Author: Damilola Ogundiran</p>
+                </article>
+              </div>
+              <div class="openpage-back"></div>
+            </div>
+          </div>
+          <div class="inner-page">
+            <div class="innerpage-container">
+              <p>
+                this book is carefully crafted to showcase the power and
+                versatility of my Cascading Style Sheets (CSS) skill in modern
+                web design. From stunning layout designs to captivating
+                animations and interactive user interfaces
+              </p>
+              <a href="./bookpage.html"
+                ><button class="btn">click to open</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end of each book -->
+        <!-- start of each book -->
+        <div class="each-card">
+          <div class="open-page">
+            <div class="openpage-container">
+              <div class="openpage-front">
+                <article class="front-text">
+                  <h1>css project</h1>
+                  <p>Author: Damilola Ogundiran</p>
+                </article>
+              </div>
+              <div class="openpage-back"></div>
+            </div>
+          </div>
+          <div class="inner-page">
+            <div class="innerpage-container">
+              <p>
+                this book is carefully crafted to showcase the power and
+                versatility of my Cascading Style Sheets (CSS) skill in modern
+                web design. From stunning layout designs to captivating
+                animations and interactive user interfaces
+              </p>
+              <a href="./bookpage.html"
+                ><button class="btn">click to open</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end of each book -->
       </div>
-      <!-- menu -->
-      <div class="menu">
-        <h3>menu</h3>
-      </div>
-      <!-- aside links -->
-      <div class="aside-links">
-        <li class="aside-link">
-          <i class="fa-solid fa-house-user"></i><a href="./index.html">home</a>
-        </li>
-        <li class="aside-link">
-          <i class="fa-solid fa-address-card"></i
-          ><a href="./about.html">about</a>
-        </li>
-        <li class="aside-link">
-          <i class="fa-solid fa-briefcase"></i><a href="">project</a>
-        </li>
-        <li class="aside-link">
-          <i class="fa-solid fa-star"></i><a href="">skills</a>
-        </li>
-        <li class="aside-link">
-          <i class="fa-solid fa-address-book"></i><a href="">contact</a>
-        </li>
-      </div>
-      <!-- social icons -->
-      <div class="social-icons">
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
-    </aside>
-    <div class="project-container">
-     <h1>project page</h1>
     </div>
-    <script src="./about.js"></script>
+    <script type="module" src="./src/pages/project.js"></script>
   </body>
 </html>
