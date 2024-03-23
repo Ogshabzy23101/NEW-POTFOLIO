@@ -208,8 +208,8 @@ nav {
   animation: expand 1s infinite;
   visibility: visible;
   position: relative;
-  left: 90%;
-  top: 20%;
+  left: 85%;
+  top: 30%;
 }
 
 .logo {
@@ -526,21 +526,22 @@ li a:hover {
 
 .project-container {
   max-width: 80%;
- place-items: flex-end;
+  place-items: center;
   /* margin-top: 3rem; */
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80vh;
-  gap: 5rem ;
+  grid-template-rows: 60vh;
+  gap: 3rem;
   /* padding: 100px 0; */
 }
-.project-heading{
+
+.project-heading {
   color: var(--primaryColor);
   font-family: var(--headingfont);
   margin: auto;
   width: 300px;
-  margin-top: 5rem;
+  margin-top: 1rem;
   text-transform: capitalize;
   font-size: 2rem;
 }
@@ -552,7 +553,13 @@ li a:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+
+  }
+
+  .project-heading {
+
+    margin-top: 4rem;
+
   }
 }
 
@@ -620,7 +627,7 @@ li a:hover {
 }
 
 .openpage-front {
-  background-image: url(./images/istockphoto-517671879-1024x1024.jpg);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -632,22 +639,33 @@ li a:hover {
   place-items: center;
 }
 
-.front-text {
-  margin: auto;
-  font-size: 2rem;
-  color: #f8f0f0;
-  padding-left: 1rem;
-  text-transform: capitalize;
+.front1 {
+  background-image: url(./images/book3.jpg);
+}
+.front2 {
+  background-image: url(./images/book4.jpg);
+}
+.front3 {
+  background-image: url(./images/book6.jpeg);
 }
 
-.front-text h1 {
-  margin-bottom: 2rem;
+.front-text {
+  position: relative;
+  margin: auto;
+  top: 130px;
+  font-size: 1.5rem;
+  color: #be5f11;
+  padding-left: 1rem;
+  text-transform: capitalize;
+  font-family: var(--headingfont);
 }
+
+
 
 .openpage-back {
   background-color: #fafbfa;
   transform: rotateY(180deg);
-  background-image: url(./images/openback_1.jpg);
+  background-image: url(./images/book2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -655,6 +673,9 @@ li a:hover {
 
 .innerpage-container {
   padding: 2rem;
+  font-family:var(--headingfont) ;
+  color: #3d1d02;
+  font-weight: 700;
 }
 
 
