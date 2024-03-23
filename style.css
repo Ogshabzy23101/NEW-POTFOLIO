@@ -13,6 +13,9 @@
   --spanFont: 'Nosifer', sans-serif;
   --primaryColor: #f5f5dc;
   --secondaryColor: #ea710e;
+  --primary: #212121;
+  --secondary: #515151;
+  --white: #ffffff;
 }
 
 a {
@@ -178,6 +181,7 @@ nav {
   display: none;
   width: 100%;
   place-items: center;
+
 }
 
 .nav-center {
@@ -245,6 +249,9 @@ li a:hover {
 
   nav {
     display: flex;
+    position: fixed;
+    z-index: 1000000;
+    box-shadow: 0px 0px 5px rgb(104, 96, 96);
   }
 }
 
@@ -353,10 +360,11 @@ li a:hover {
     padding: 0 auto;
   }
 
-  .text-card-article h1{
+  .text-card-article h1 {
     font-size: 3rem;
   }
-  .text-card-article p{
+
+  .text-card-article p {
     font-size: 2rem;
   }
 }
@@ -470,3 +478,4 @@ li a:hover {
   }
 
 }
+
