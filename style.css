@@ -57,15 +57,16 @@ main {
   padding: 10px 10px 10px 30px;
   z-index: 1;
   color: white;
-  display: none;
-  transition: all 2s linear;
+  /* display: none; */
+  transition: left 1s ease-in-out;
   /* position: relative; */
   top: 0%;
+  left: -350px;
 }
 
 .aside-nav.show {
-  display: flex;
-  transition: all 2s linear;
+  /* display: flex; */
+  left: 0;
 }
 
 
@@ -209,7 +210,7 @@ nav {
   font-size: 2rem;
   color: #ea710e;
   animation: expand 1s infinite;
-  /* visibility: visible; */
+  display: flex;
   position: relative;
   left: 85%;
   top: 30%;
@@ -279,17 +280,19 @@ li a:hover {
     display: none;
     visibility: hidden;
     position: relative;
-    left: 0%;
+    left: -20%;
+    border: 2px red solid;
   }
 }
 
 .container {
-  /* position: relative; */
+
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  width: 100%;
-  max-height: calc(100vh - 65);
+  width: 90%;
+  height: calc(100vh - 65);
+  margin: auto;
 }
 
 .text-card {
@@ -297,7 +300,8 @@ li a:hover {
   flex-direction: column;
   place-items: center;
   color: white;
-  padding: 0 20px;
+  padding: 10px 0;
+
 }
 
 .text-card-article {
@@ -307,11 +311,13 @@ li a:hover {
   color: white;
   padding: 20px;
   margin: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .text-card h1 {
   font-size: 2rem;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 3rem auto;
   margin-bottom: 2rem;
   text-align: center;
@@ -330,7 +336,7 @@ li a:hover {
 
 .text-card p {
   font-size: 1.5rem;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   animation: slideright 2s ease forwards;
@@ -341,6 +347,7 @@ li a:hover {
   display: flex;
   flex-direction: column;
   place-items: center;
+  height: 100%;
 }
 
 .image-card img {
@@ -370,7 +377,18 @@ li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    max-height: calc(100vh - 59px);
+    height: calc(100vh - 59px);
+  }
+
+  .text-card-article {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    overflow-x: hidden;
   }
 }
 
@@ -526,40 +544,53 @@ li a:hover {
 .project-container {
   max-width: 80%;
   place-items: center;
-  /* margin-top: 3rem; */
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60vh;
-  gap: 3rem;
-  /* padding: 100px 0; */
+
+  gap: 10rem;
+
 }
 
 .project-heading {
   color: var(--primaryColor);
   font-family: var(--headingfont);
   margin: auto;
+  margin-bottom: 2rem;
   width: 300px;
-  /* margin-top: 1rem; */
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 @media screen and (min-width:490px) {
   .project-container {
-    max-width: 70%;
+    max-width: 80%;
     place-items: center;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* gap: 10rem; */
 
   }
 
+  .project-heading {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width:990px) {}
 
-@media screen and (min-width:1350px) {}
+@media screen and (min-width:1350px) {
+  .project-container {
+    border: 2px red solid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+    width: 100%;
+
+  }
+}
 
 /* project book */
 .each-card {
@@ -644,8 +675,11 @@ li a:hover {
 .front3 {
   background-image: url(./images/book6.jpeg);
 }
+.front4 {
+  background-image: url(./images/book6.jpg);
+}
 
-.front-text {
+/* .front-text {
   position: relative;
   margin: auto;
   top: 130px;
@@ -654,7 +688,7 @@ li a:hover {
   padding-left: 1rem;
   text-transform: capitalize;
   font-family: var(--headingfont);
-}
+} */
 
 
 
@@ -672,6 +706,12 @@ li a:hover {
   font-family: var(--headingfont);
   color: #3d1d02;
   font-weight: 700;
+}
+.innerpage-container h1{
+  font-size: 1.3rem;
+  color: #723504;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 
@@ -700,6 +740,22 @@ li a:hover {
   transition: all 1s ease;
   width: 15rem;
   z-index: 1;
+}
+
+.openbook-btn {
+  color: #752f0b;
+  background-color: transparent;
+  border: 1px #3d1d02 solid;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 10px;
+  animation: expand 2s infinite linear;
+  cursor: pointer;
+}
+
+.openbook-btn:hover {
+  background-color: #3d1d02;
+  color: white;
 }
 
 /* end of projects style */
@@ -811,8 +867,24 @@ li a:hover {
   text-transform: capitalize;
 }
 
+.contact-us-form input {
+  border: 0px solid #fa9c50;
+  background-color: transparent;
+  color: #fa9c50;
+  border-bottom: 2px solid #fa9c50;
+}
 
+.contact-us-form input::placeholder {
+  color: #fa9c50;
+}
 
+.sub-btn {
+  border: #be5f11 1px solid;
+  border-radius: 5px;
+  width: 100px;
+  background-color: #be5f11;
+  color: #f5f5dc;
+}
 
 .contact-us-img {
   width: 100%;
