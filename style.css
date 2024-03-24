@@ -584,7 +584,6 @@ li a:hover {
 
 @media screen and (min-width:1350px) {
   .project-container {
-    border: 2px red solid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10rem;
     width: 100%;
