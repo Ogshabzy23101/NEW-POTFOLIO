@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
       src="https://kit.fontawesome.com/5dc8991644.js"
       crossorigin="anonymous"
     ></script>
- <title>Document</title>
-</head>
- <body>
-     <nav class="nav">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contact">
+      <nav class="nav">
         <div class="nav-center">
           <img
             class="logo"
@@ -20,15 +21,25 @@
           />
           <div class="nav-link">
             <ul class="links">
-              <li class="link" style="--i: 1"><a href="./index.html">home</a></li>
-              <li class="link" style="--i: 2"><a href="./about.html">about</a></li>
-              <li class="link" style="--i: 3"><a href="./project.html">project</a></li>
-              <li class="link" style="--i: 4"><a href="./skill.html">skills</a></li>
-              <li class="link" style="--i: 5"><a href="./contact.html">contact</a></li>
+              <li class="link" style="--i: 1">
+                <a href="./index.html">home</a>
+              </li>
+              <li class="link" style="--i: 2">
+                <a href="./about.html">about</a>
+              </li>
+              <li class="link" style="--i: 3">
+                <a href="./project.html">project</a>
+              </li>
+              <li class="link" style="--i: 4">
+                <a href="./skill.html">skills</a>
+              </li>
+              <li class="link" style="--i: 5">
+                <a href="./contact.html">contact</a>
+              </li>
             </ul>
           </div>
         </div>
-       <i class="fa-solid fa-bars navbtn"></i>
+        <i class="fa-solid fa-bars navbtn"></i>
       </nav>
       <aside class="aside-nav">
         <!-- small circle -->
@@ -56,19 +67,23 @@
         <!-- aside links -->
         <div class="aside-links">
           <li class="aside-link">
-            <i class="fa-solid fa-house-user"></i><a href="./index.html">home</a>
+            <i class="fa-solid fa-house-user"></i
+            ><a href="./index.html">home</a>
           </li>
           <li class="aside-link">
-            <i class="fa-solid fa-address-card"></i><a href="./about.html">about</a>
+            <i class="fa-solid fa-address-card"></i
+            ><a href="./about.html">about</a>
           </li>
           <li class="aside-link">
-            <i class="fa-solid fa-briefcase"></i><a href="./project.html">project</a>
+            <i class="fa-solid fa-briefcase"></i
+            ><a href="./project.html">project</a>
           </li>
           <li class="aside-link">
             <i class="fa-solid fa-star"></i><a href="./skill.html">skills</a>
           </li>
           <li class="aside-link">
-            <i class="fa-solid fa-address-book"></i><a href="./contact.html">contact</a>
+            <i class="fa-solid fa-address-book"></i
+            ><a href="./contact.html">contact</a>
           </li>
         </div>
         <!-- social icons -->
@@ -81,9 +96,75 @@
           <i class="fa-brands fa-twitter"></i>
         </div>
       </aside>
-    <div class="about-container">
-     <h1>contact page</h1>
+      <h1 class="contact-tittle">contact <span>me</span></h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <article>
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="contact-text">
+              <h2>address</h2>
+              <p>21/3 jocks lodge edinburgh eh8 7aa</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-phone"></i>
+            <div class="contact-text">
+              <h2>phone:</h2>
+              <p>07562462154</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-envelope"></i>
+            <div class="contact-text">
+              <h2>email:</h2>
+              <p>
+                <a href="ogundirandami54@gmail.com"
+                  >ogundirandami54@gmail.com</a
+                >
+              </p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-globe"></i>
+            <div class="contact-text">
+              <h2>website:</h2>
+              <p>
+                <a href="https://ogshabzy23101.github.io/my-portfolio/"
+                  >www.shabzy.com</a
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="contact-us">
+          <div class="contact-us-text">
+            <form action="" class="contact-us-form">
+              <article>
+                <input type="text" id="name" />
+                <label for="name">full name</label>
+              </article>
+              <article>
+                <input type="email" id="email" placeholder="email"/>
+                <label for="email">email address</label>
+              </article>
+              <article class="full-width">
+                <input type="text" id="subject" placeholder="subject"/>
+                <label for="subject">subject</label>
+              </article>
+              <article class="full-width">
+                <input type="textarea" id="message" placeholder="message"/>
+                <label for="message">message</label>
+              </article>
+
+              <input type="submit" value="send message" class="sub-btn" />
+            </form>
+          </div>
+          <div class="contact-us-img">
+            <img src="./images/contactimg.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./about.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
