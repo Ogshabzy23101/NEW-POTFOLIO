@@ -197,12 +197,12 @@ nav {
 .nav-center {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   place-items: center;
   align-items: center;
-  max-width: 85%;
+  width: 90%;
   margin: 0 auto;
   height: fit-content;
-  display: none;
 
 }
 
@@ -212,8 +212,8 @@ nav {
   animation: expand 1s infinite;
   display: flex;
   position: relative;
-  left: 85%;
-  top: 30%;
+  right: 30px;
+  /* top: 30%; */
 }
 
 .logo {
@@ -223,8 +223,10 @@ nav {
 }
 
 .nav-link {
-  width: 70%;
-  margin-left: auto;
+  width: 60%;
+  /* margin-left: auto; */
+  display: none;
+  justify-content: space-between;
 }
 
 .links {
@@ -232,6 +234,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }
 
 li {
@@ -271,17 +274,26 @@ li a:hover {
   }
 
   .nav-center {
-    visibility: visible;
     display: flex;
-    width: 99%;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: fit-content;
+
+  }
+
+  .nav-link {
+    /* visibility: visible; */
+    display: flex;
+
+    /* width: 99%; */
   }
 
   .navbtn {
     display: none;
-    visibility: hidden;
-    position: relative;
-    left: -20%;
-    border: 2px red solid;
   }
 }
 
@@ -674,6 +686,7 @@ li a:hover {
 .front3 {
   background-image: url(./images/book6.jpeg);
 }
+
 .front4 {
   background-image: url(./images/book6.jpg);
 }
@@ -706,7 +719,8 @@ li a:hover {
   color: #3d1d02;
   font-weight: 700;
 }
-.innerpage-container h1{
+
+.innerpage-container h1 {
   font-size: 1.3rem;
   color: #723504;
   text-transform: uppercase;
