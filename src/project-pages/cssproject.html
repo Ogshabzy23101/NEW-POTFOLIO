@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="bookpage.css">
+ <title>book page</title>
+</head>
+<body>
+ <div class="wrapper">
+  <div class="cover cover-left"></div>
+  <div class="cover cover-right"></div>
+  <div class="book">
+   <div class="book-page page-left">
+    <h1>css project 1</h1>
+    <span class="page-number">1</span>
+   </div>
+   <!-- page 1&2, each side contain diff content -->
+   <div class="book-page page-right page-1" id="turn-1">
+    <!-- page 1 -->
+    <div class="front-page">
+     <h1>css project 2</h1>
+     <span class="page-number">2</span>
+     <span class="next-btn btn" data-page="turn-1">next-page</span>
+    </div>
+    <!-- page-2 -->
+    <div class="back-page">
+     <h1>css project 3</h1>
+     <span class="page-number">3</span>
+     <span class="prev-btn btn" data-page="turn-1">prev-page</span>
+    </div>
+   </div>
+   <!-- page 3&4, each side contain diff content -->
+   <div class="book-page page-right" id="turn-2">
+    <!-- page 1 -->
+    <div class="front-page">
+     <h1>css project 4</h1>
+     <span class="page-number">4</span>
+      <span class="next-btn btn" data-page="turn-2">next-page</span>
+    </div>
+    <!-- page-2 -->
+    <div class="back-page">
+     <h1>css project 5</h1>
+     <span class="page-number">5</span>
+     <span class="prev-btn btn" data-page="turn-2">prev-page</span>
+    </div>
+   </div>
+  </div>
+ </div>
+ <a href="/project.html">close book</a>
+ <script src="./bookpage.js"></script>
+</body>
+</html>
