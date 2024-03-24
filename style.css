@@ -210,10 +210,9 @@ nav {
   font-size: 2rem;
   color: #ea710e;
   animation: expand 1s infinite;
-  display: flex;
+  /* display: none; */
   position: relative;
   right: 30px;
-  /* top: 30%; */
 }
 
 .logo {
@@ -286,14 +285,15 @@ li a:hover {
   }
 
   .nav-link {
-    /* visibility: visible; */
+    
     display: flex;
 
-    /* width: 99%; */
+    
   }
 
   .navbtn {
     display: none;
+    visibility: hidden;
   }
 }
 
