@@ -46,8 +46,8 @@ a {
 
 @media screen and (min-width: 1024px) {
  .wrapper {
-  width: 80vw;
-  height: 85vh;
+  width: 70vw;
+  height: 80vh;
   margin: auto;
   position: relative;
   padding: 2rem;
