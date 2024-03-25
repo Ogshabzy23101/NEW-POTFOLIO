@@ -573,6 +573,12 @@ li a:hover {
   text-transform: capitalize;
   font-size: 1.4rem;
   text-align: center;
+  color: #f5f5dc;
+}
+
+.project-heading span {
+  color: #fa9c50;
+  font-size: 3.5rem;
 }
 
 @media screen and (min-width:490px) {
@@ -589,6 +595,11 @@ li a:hover {
   .project-heading {
     margin-bottom: 0;
     font-size: 2rem;
+  }
+
+  .project-heading span {
+
+    font-size: 4.5rem;
   }
 }
 
@@ -802,7 +813,7 @@ li a:hover {
   margin: auto;
   box-shadow: 0px 0px 50px rgb(71, 47, 14);
   padding-top: 2rem;
-  background-color: #824e0669;
+  background-color: #1616166c;
 }
 
 .contact-tittle {
