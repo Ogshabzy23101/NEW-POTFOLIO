@@ -15,3 +15,27 @@ gsap.from(".contact-us-form article", {
   amount: 1.5
  }
 });
+
+// Create the observer like the examples above
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+  if (entry.isIntersecting) {
+   entry.target.classList.add('scroll-animation');
+   return;
+  }
+
+  entry.target.classList.remove('scroll-animation');
+ });
+});
+
+// Get multiple elements instead of a single one using "querySelectorAll"
+const squares = document.querySelectorAll('.about-section');
+// const title = document.querySelectorAll('.about-title');
+// const para = document.querySelectorAll('.about-para');
+// const images = document.querySelectorAll('.about-image');
+
+// Loop over the elements and add each one to the observer
+squares.forEach((element) => observer.observe(element));
+// title.forEach((element) => observer.observe(element));
+// para.forEach((element) => observer.observe(element));
+// images.forEach((element) => observer.observe(element));

@@ -523,12 +523,12 @@ li a:hover {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: scale(0, .025);
     opacity: 0;
   }
 
-  100% {
-    transform: scale(1);
+  50% {
+    transform: scale(1, .025);
     opacity: 1;
   }
 
@@ -554,8 +554,10 @@ li a:hover {
 
 /* about style */
 .about {
-  background-image: url(./images/ship1.jpg);
+  background-image: url(./src/project-pages/images/ai-generated-8623023_1280.jpg);
   background-color: #6b3204a2;
+  overflow-y: hidden;
+  max-height: 100vh;
 }
 
 .about-container {
@@ -563,6 +565,12 @@ li a:hover {
   flex-direction: column;
   gap: 4rem;
   place-items: center;
+  overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar{
+  color: red;
 }
 
 .about-section {
@@ -570,30 +578,32 @@ li a:hover {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: .5rem;
-  height: 100vh;
+  gap: 3rem;
+  padding: 2rem 0;
+  min-height: 80vh;
   box-shadow: 0px 0px 20px rgba(12, 12, 12, 0.123);
   background-color: #1b1a1846;
   border-radius: 20px;
 }
 
-.sec-1 {
+.scroll-animation .about-text {
   animation: appear 2s ease-in forwards;
+
+}
+
+.sec-1 {
   background-color: #ea710e60;
 }
 
 .sec-2 {
-  animation: appear 2s ease-in forwards;
   background-color: #e64c5970;
 }
 
 .sec-3 {
-  animation: appear 2s ease-in forwards;
   background-color: #2f485860;
 }
 
 .sec-4 {
-  animation: appear 2s ease-in forwards;
   background-color: #43537d50;
 }
 
@@ -612,6 +622,10 @@ li a:hover {
   text-transform: capitalize;
   opacity: 0;
   font-family: var(--headingfont);
+
+}
+
+.scroll-animation .about-title {
   animation: slidedown 1s ease forwards;
   animation-delay: 2s;
 }
@@ -623,6 +637,10 @@ li a:hover {
   text-transform: capitalize;
   opacity: 0;
   font-family: var(--paragraphFont);
+  padding-bottom: 20px;
+}
+
+.scroll-animation .about-para {
   animation: slideleft 1s ease forwards;
   animation-delay: 2.5s;
 }
@@ -637,7 +655,10 @@ li a:hover {
   width: 40%;
   margin: auto;
   opacity: 0;
-  animation: appear 1s ease-in forwards;
+}
+
+.scroll-animation .about-image {
+  animation: slideleft 1s ease-in forwards;
   animation-delay: 3s;
 }
 
@@ -659,12 +680,13 @@ li a:hover {
     margin: auto;
     width: 90%;
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: 1.23rem;
     line-height: 1.5;
+    padding-bottom: 0;
   }
 
   .about-img img {
-    width: 30%;
+    width: 40%;
 
   }
 }
