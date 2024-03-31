@@ -16,6 +16,7 @@ body {
  position: relative;
  display: flex;
  flex-direction: column;
+ gap: 10px;
  place-items: center;
  background-color: rgb(52, 58, 41);
  height: 100vh;
@@ -26,8 +27,6 @@ body {
 }
 
 a {
- position: relative;
- top: -10px;
  color: white;
  text-decoration: none;
  text-transform: capitalize;
@@ -36,7 +35,7 @@ a {
 
 .wrapper {
  width: 100vw;
- height: 50vh;
+ height: 70%;
  margin: auto;
  position: relative;
  padding: 1rem;
@@ -155,24 +154,23 @@ p {
  width: 100%;
  margin-top: 3%;
  height: 90%;
- border: 2px red solid;
 }
 
 .box {
  display: flex;
  flex-direction: column;
  width: 90%;
+ height: 100%;
  margin: auto;
  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.315);
  /* padding: 5px; */
  gap: 1rem;
  border-radius: 10px;
  background-color: #6d493734;
- border: 2px rgb(162, 0, 255) solid;
 }
 
 .image-box {
- height: 100px;
+ height: 40%;
  background-color: black;
  border-top-left-radius: 10px;
  border-top-right-radius: 10px;
@@ -251,7 +249,7 @@ p {
  }
 
  .book-page .back-page, .book-page .front-page {
-  padding: 2rem;
+  padding: 1rem .5rem;
  }
 
  .box {
@@ -312,6 +310,5 @@ p {
  border: 2px solid #5c2002;
  padding: 5px 20px;
  background-color: transparent;
- /* color: #5c2002; */
 
 }
