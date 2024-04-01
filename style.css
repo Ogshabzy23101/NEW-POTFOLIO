@@ -569,7 +569,7 @@ li a:hover {
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   color: red;
 }
 
@@ -1040,6 +1040,691 @@ li a:hover {
   font-size: 2rem;
   color: #fa9c50;
 }
+
+
+.icon-box>*:nth-child(1) {
+  transform: translate(0px, 0px);
+  -webkit-animation: shunt-1 8s ease infinite alternate;
+  animation: shunt-1 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-1 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(12.0px, 0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 9px);
+  }
+
+  95%, 100% {
+    transform: translate(15.0px, 0px);
+  }
+}
+
+@keyframes shunt-1 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(12.0px, 0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 9px);
+  }
+
+  95%, 100% {
+    transform: translate(15.0px, 0px);
+  }
+}
+
+.icon-box>*:nth-child(2) {
+  transform: translate(0px, 15px);
+  -webkit-animation: shunt-2 8s ease infinite alternate;
+  animation: shunt-2 8s ease infinite alternate;
+  
+}
+
+@-webkit-keyframes shunt-2 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(9px, 1.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 3px);
+  }
+
+  95%, 100% {
+    transform: translate(15px, 1.5px);
+  }
+}
+
+@keyframes shunt-2 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(9px, 1.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 3px);
+  }
+
+  95%, 100% {
+    transform: translate(15px, 1.5px);
+  }
+}
+
+.icon-box>*:nth-child(3) {
+  transform: translate(0px, 30px);
+  -webkit-animation: shunt-3 8s ease infinite alternate;
+  animation: shunt-3 8s ease infinite alternate;
+ 
+}
+
+@-webkit-keyframes shunt-3 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(7.5px, 3px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 3px);
+  }
+}
+
+@keyframes shunt-3 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(7.5px, 3.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 3.0px);
+  }
+}
+
+.icon-box>*:nth-child(4) {
+  transform: translate(0px, 45px);
+  -webkit-animation: shunt-4 8s ease infinite alternate;
+  animation: shunt-4 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-4 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 4.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 10.5px);
+  }
+
+  95%, 100% {
+    transform: translate(3.0px, 4.5px);
+  }
+}
+
+@keyframes shunt-4 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 4.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 10.5px);
+  }
+
+  95%, 100% {
+    transform: translate(3.0px, 4.5px);
+  }
+}
+
+.icon-box>*:nth-child(5) {
+  transform: translate(0px, 60px);
+  -webkit-animation: shunt-5 8s ease infinite alternate;
+  animation: shunt-5 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-5 {
+  0%, 10% {
+    transform: translate(0px, 9.0px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 4.5px);
+  }
+
+  95%, 100% {
+    transform: translate(6.0px, 6.0px);
+  }
+}
+
+@keyframes shunt-5 {
+  0%, 10% {
+    transform: translate(0px, 9.0px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 4.5px);
+  }
+
+  95%, 100% {
+    transform: translate(6.0px, 6.0px);
+  }
+}
+
+.icon-box>*:nth-child(6) {
+  transform: translate(0px, 75px);
+  -webkit-animation: shunt-6 8s ease infinite alternate;
+  animation: shunt-6 8s ease infinite alternate;
+ 
+}
+
+@-webkit-keyframes shunt-6 {
+  0%, 10% {
+    transform: translate(0px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(6.0px, 7.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 0px);
+  }
+
+  95%, 100% {
+    transform: translate(12.0px, 7.5px);
+  }
+}
+
+@keyframes shunt-6 {
+  0%, 10% {
+    transform: translate(0px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(6.0px, 7.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 0px);
+  }
+
+  95%, 100% {
+    transform: translate(12.0px, 7.5px);
+  }
+}
+
+.icon-box>*:nth-child(7) {
+  transform: translate(0px, 90px);
+  -webkit-animation: shunt-7 8s ease infinite alternate;
+  animation: shunt-7 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-7 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(16.5px, 9.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(9.0px, 9.0px);
+  }
+}
+
+@keyframes shunt-7 {
+  0%, 10% {
+    transform: translate(0px, 13.5px);
+  }
+
+  30%, 40% {
+    transform: translate(16.5px, 9.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(9.0px, 9.0px);
+  }
+}
+
+.icon-box>*:nth-child(8) {
+  transform: translate(0px, 105px);
+  -webkit-animation: shunt-8 8s ease infinite alternate;
+  animation: shunt-8 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-8 {
+  0%, 10% {
+    transform: translate(0px, 10.5px);
+  }
+
+  30%, 40% {
+    transform: translate(0px, 10.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 3.0px);
+  }
+
+  95%, 100% {
+    transform: translate(13.5px, 10.5px);
+  }
+}
+
+@keyframes shunt-8 {
+  0%, 10% {
+    transform: translate(0px, 10.5px);
+  }
+
+  30%, 40% {
+    transform: translate(0px, 10.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 3.0px);
+  }
+
+  95%, 100% {
+    transform: translate(13.5px, 10.5px);
+  }
+}
+
+.icon-box>*:nth-child(9) {
+  transform: translate(0px, 120px);
+  -webkit-animation: shunt-9 8s ease infinite alternate;
+  animation: shunt-9 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-9 {
+  0%, 10% {
+    transform: translate(0px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(13.5px, 12.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 6.0px);
+  }
+
+  95%, 100% {
+    transform: translate(3.0px, 12.0px);
+  }
+}
+
+@keyframes shunt-9 {
+  0%, 10% {
+    transform: translate(0px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(13.5px, 12.0px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 6.0px);
+  }
+
+  95%, 100% {
+    transform: translate(3.0px, 12.0px);
+  }
+}
+
+.icon-box>*:nth-child(10) {
+  transform: translate(0px, 135px);
+  -webkit-animation: shunt-10 8s ease infinite alternate;
+  animation: shunt-10 8s ease infinite alternate;
+ 
+}
+
+@-webkit-keyframes shunt-10 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(10.5px, 13.5px);
+  }
+}
+
+@keyframes shunt-10 {
+  0%, 10% {
+    transform: translate(0px, 1.5px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  70%, 80% {
+    transform: translate(0px, 7.5px);
+  }
+
+  95%, 100% {
+    transform: translate(10.5px, 13.5px);
+  }
+}
+
+.icon-box>*:nth-child(11) {
+  transform: translate(15px, 0px);
+  -webkit-animation: shunt-11 8s ease infinite alternate;
+  animation: shunt-11 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-11 {
+  0%, 10% {
+    transform: translate(1.5px, 0px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 3.0px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 0px);
+  }
+}
+
+@keyframes shunt-11 {
+  0%, 10% {
+    transform: translate(1.5px, 0px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 3.0px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 0px);
+  }
+}
+
+.icon-box>*:nth-child(12) {
+  transform: translate(15px, 15px);
+  -webkit-animation: shunt-12 8s ease infinite alternate;
+  animation: shunt-12 8s ease infinite alternate;
+  
+}
+
+@-webkit-keyframes shunt-12 {
+  0%, 10% {
+    transform: translate(1.5px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(4.5px, 1.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 0px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 1.5px);
+  }
+}
+
+@keyframes shunt-12 {
+  0%, 10% {
+    transform: translate(1.5px, 4.5px);
+  }
+
+  30%, 40% {
+    transform: translate(4.5px, 1.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 0px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 1.5px);
+  }
+}
+
+.icon-box>*:nth-child(13) {
+  transform: translate(15px, 30px);
+  -webkit-animation: shunt-13 8s ease infinite alternate;
+  animation: shunt-13 8s ease infinite alternate;
+ 
+}
+
+@-webkit-keyframes shunt-13 {
+  0%, 10% {
+    transform: translate(1.5px, 3.0px);
+  }
+
+  30%, 40% {
+    transform: translate(12.0px, 3.0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  95%, 100% {
+    transform: translate(13.5px, 3.0px);
+  }
+}
+
+@keyframes shunt-13 {
+  0%, 10% {
+    transform: translate(1.5px, 3.0px);
+  }
+
+  30%, 40% {
+    transform: translate(12.0px, 3.0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  95%, 100% {
+    transform: translate(13.5px, 3.0px);
+  }
+}
+
+.icon-box>*:nth-child(14) {
+  transform: translate(15px, 45px);
+  -webkit-animation: shunt-14 8s ease infinite alternate;
+  animation: shunt-14 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-14 {
+  0%, 10% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 4.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 4.5px);
+  }
+}
+
+@keyframes shunt-14 {
+  0%, 10% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 4.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 13.5px);
+  }
+
+  95%, 100% {
+    transform: translate(16.5px, 4.5px);
+  }
+}
+
+.icon-box>*:nth-child(15) {
+  transform: translate(15px, 60px);
+  -webkit-animation: shunt-15 8s ease infinite alternate;
+  animation: shunt-15 8s ease infinite alternate;
+}
+
+@-webkit-keyframes shunt-15 {
+  0%, 10% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 6.0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 9.0px);
+  }
+
+  95%, 100% {
+    transform: translate(7.5px, 6.0px);
+  }
+}
+
+@keyframes shunt-15 {
+  0%, 10% {
+    transform: translate(1.5px, 6.0px);
+  }
+
+  30%, 40% {
+    transform: translate(10.5px, 6.0px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 9.0px);
+  }
+
+  95%, 100% {
+    transform: translate(7.5px, 6.0px);
+  }
+}
+
+.icon-box>*:nth-child(16) {
+  transform: translate(15px, 75px);
+  -webkit-animation: shunt-16 8s ease infinite alternate;
+  animation: shunt-16 8s ease infinite alternate;
+  
+}
+
+@-webkit-keyframes shunt-16 {
+  0%, 10% {
+    transform: translate(1.5px, 7.5px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 7.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 9.0px);
+  }
+
+  95%, 100% {
+    transform: translate(9.0px, 7.5px);
+  }
+}
+
+@keyframes shunt-16 {
+  0%, 10% {
+    transform: translate(1.5px, 7.5px);
+  }
+
+  30%, 40% {
+    transform: translate(1.5px, 7.5px);
+  }
+
+  70%, 80% {
+    transform: translate(1.5px, 9.0px);
+  }
+
+  95%, 100% {
+    transform: translate(9.0px, 7.5px);
+  }
+}
+
+
+
+
+
 
 footer {
   width: 100%;
