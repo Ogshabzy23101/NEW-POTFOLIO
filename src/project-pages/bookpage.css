@@ -1,9 +1,21 @@
-*,
-*::after,
-*::before {
- box-sizing: inherit;
- margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Nosifer&family=Pirata+One&display=swap');
+
+
+*, ::after, ::before {
  padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --paragraphFont: 'IM Fell DW Pica', serif;
+ --headingfont: 'Pirata One', system-ui;
+ --spanFont: 'Nosifer', sans-serif;
+ --primaryColor: #f5f5dc;
+ --secondaryColor: #ea710e;
+ --primary: #212121;
+ --secondary: #515151;
+ --white: #ffffff;
 }
 
 html {
@@ -103,6 +115,22 @@ a {
  z-index: 1;
 }
 
+.book-page.page-left h1 {
+ color: #5c2002;
+ font-family: var(--headingfont);
+ font-size: 1.5rem;
+ width: 100%;
+ text-transform: capitalize;
+}
+
+.book-page.page-left p {
+ color: #5c2002;
+ font-family: var(--headingfont);
+ font-size: .8rem;
+ margin-top: .5rem;
+ width: 100%;
+}
+
 .book-page.page-right {
  position: absolute;
  right: 0;
@@ -136,17 +164,20 @@ a {
 
 h1 {
  font-size: 16px;
+ font-family: var(--headingfont);
 }
 
 h3 {
  font-size: 18px;
  color: #7e2d04;
  text-transform: capitalize;
+ font-family: var(--headingfont);
 }
 
 p {
  font-size: 13px;
  color: #5c2002;
+ font-family: var(--paragraphFont);
 }
 
 
@@ -189,10 +220,6 @@ p {
  text-align: center;
  padding: 0 5px;
 
-}
-
-.text-box h3 {
- margin-bottom: 1rem;
 }
 
 .project-links {
@@ -242,6 +269,22 @@ p {
   font-size: 13px;
   text-align: center;
   padding: 10px;
+ }
+
+ .book-page.page-left h1 {
+  color: #5c2002;
+  font-family: var(--headingfont);
+  font-size: 2rem;
+  width: 100%;
+  text-transform: capitalize;
+ }
+
+ .book-page.page-left p {
+  color: #2b0f01;
+  font-family: var(--paragraphFont);
+  font-size: 1.1rem;
+  margin-top: .5rem;
+  width: 100%;
  }
 
  .book-page {
@@ -295,6 +338,12 @@ p {
  bottom: 20px;
  left: 5%;
  cursor: pointer;
+}
+
+.prev-btn:hover, .next-btn:hover {
+ color: #ea710e;
+ transform: scale(1.2);
+ transition: transform 1s ease;
 }
 
 .closebook-btn {
