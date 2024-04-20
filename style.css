@@ -367,6 +367,7 @@ li a:hover {
 .image-card img {
   width: 250px;
   border-radius: 50%;
+  background-color: #f5f5dca2;
   margin: auto;
   box-shadow: 0 -20px 30px 15px rgba(229, 124, 25, 0.4);
   opacity: 0;
