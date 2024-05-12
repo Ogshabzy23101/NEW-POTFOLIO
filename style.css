@@ -990,6 +990,31 @@ li a:hover {
   gap: 2rem;
 }
 
+.range-box .range:nth-child(1) .range-bar .bar {
+  width: 98%;
+}
+.range-box .range:nth-child(2) .range-bar .bar {
+  width: 93%;
+}
+.range-box .range:nth-child(3) .range-bar .bar {
+  width: 95%;
+}
+.range-box .range:nth-child(4) .range-bar .bar {
+  width: 60%;
+}
+.range-box .range:nth-child(5) .range-bar .bar {
+  width: 99%;
+}
+.range-box .range:nth-child(6) .range-bar .bar {
+  width: 90%;
+}
+.range-box .range:nth-child(7) .range-bar .bar {
+  width: 99%;
+}
+.range-box .range:nth-child(8) .range-bar .bar {
+  width: 40%;
+}
+
 .info-box {
   display: flex;
   flex-direction: row-reverse;
@@ -1007,8 +1032,9 @@ li a:hover {
   width: 100%;
   justify-content: space-between;
   color: #f5f5dc;
+  letter-spacing: 4px;
   text-transform: capitalize;
-  font-size: .75rem;
+  font-size: 1rem;
   padding: 0 30px 0 20px;
 }
 
@@ -1089,7 +1115,7 @@ li a:hover {
   transform: translate(0px, 15px);
   -webkit-animation: shunt-2 8s ease infinite alternate;
   animation: shunt-2 8s ease infinite alternate;
-  
+
 }
 
 @-webkit-keyframes shunt-2 {
@@ -1132,7 +1158,7 @@ li a:hover {
   transform: translate(0px, 30px);
   -webkit-animation: shunt-3 8s ease infinite alternate;
   animation: shunt-3 8s ease infinite alternate;
- 
+
 }
 
 @-webkit-keyframes shunt-3 {
@@ -1259,7 +1285,7 @@ li a:hover {
   transform: translate(0px, 75px);
   -webkit-animation: shunt-6 8s ease infinite alternate;
   animation: shunt-6 8s ease infinite alternate;
- 
+
 }
 
 @-webkit-keyframes shunt-6 {
@@ -1428,7 +1454,7 @@ li a:hover {
   transform: translate(0px, 135px);
   -webkit-animation: shunt-10 8s ease infinite alternate;
   animation: shunt-10 8s ease infinite alternate;
- 
+
 }
 
 @-webkit-keyframes shunt-10 {
@@ -1513,7 +1539,7 @@ li a:hover {
   transform: translate(15px, 15px);
   -webkit-animation: shunt-12 8s ease infinite alternate;
   animation: shunt-12 8s ease infinite alternate;
-  
+
 }
 
 @-webkit-keyframes shunt-12 {
@@ -1556,7 +1582,7 @@ li a:hover {
   transform: translate(15px, 30px);
   -webkit-animation: shunt-13 8s ease infinite alternate;
   animation: shunt-13 8s ease infinite alternate;
- 
+
 }
 
 @-webkit-keyframes shunt-13 {
@@ -1683,7 +1709,7 @@ li a:hover {
   transform: translate(15px, 75px);
   -webkit-animation: shunt-16 8s ease infinite alternate;
   animation: shunt-16 8s ease infinite alternate;
-  
+
 }
 
 @-webkit-keyframes shunt-16 {
